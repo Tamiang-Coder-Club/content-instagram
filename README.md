@@ -26,13 +26,15 @@
 
 To get started with My Awesome Project, follow these steps:
 
+1. Clone the repository:
+
+```bash
+git clone https://github.com/username/repo.git
+cd repo
+
 ### Prerequisites
-
 - Ensure you have [Node.js](https://nodejs.org/) installed.
-- Install [Yarn](https://yarnpkg.com/):
-
-bash
-npm install
+- Install :
 
 ```bash
 npm install
