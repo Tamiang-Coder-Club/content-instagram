@@ -31,8 +31,9 @@ To get started with My Awesome Project, follow these steps:
 - Ensure you have [Node.js](https://nodejs.org/) installed.
 - Install [Yarn](https://yarnpkg.com/):
 
-```bash
+bash
 npm install
 
 ```bash
-npm run dev
+npm install
+
