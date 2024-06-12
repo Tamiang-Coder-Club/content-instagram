@@ -32,4 +32,7 @@ To get started with My Awesome Project, follow these steps:
 - Install [Yarn](https://yarnpkg.com/):
 
 ```bash
-npm install --global yarn
+npm install
+
+```bash
+npm run dev
