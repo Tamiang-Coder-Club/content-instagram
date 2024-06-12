@@ -1,9 +1,7 @@
 # 🚀 My Awesome Project
 
-![Project Banner](https://example.com/banner.png)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/travis/username/repo.svg)](https://travis-ci.org/username/repo)
 [![Coverage Status](https://img.shields.io/coveralls/username/repo.svg)](https://coveralls.io/github/username/repo)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/username/repo/pulls)
 
