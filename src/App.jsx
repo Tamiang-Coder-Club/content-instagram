@@ -1,26 +1,27 @@
-import { useState } from "react";
-import "./App.css";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import { ThemeContext } from "./Context/ThemeContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import SwitchButton from "./Content/SwitchButton";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
-  useEffect(()=>{
-    setTheme(localStorage.getItem('theme')?localStorage.getItem('theme'):'dark')
-  },[])
+  const [isOn, setIsOn] = useState(false);
+  const toggleSwitch = () => {
+    setIsOn(!isOn);
+  };
+
+  useEffect(() => {
+    if (isOn) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isOn]);
+
   return (
-    <ThemeContext.Provider value={{theme,setTheme}}>
-      <div
-        className={`${theme} ${
-          theme == "dark" ? "bg-[#121212]" : null
-        } min-h-[100vh]`}
-      >
-        <Header />
-        <Home />
-      </div>
-    </ThemeContext.Provider>
+    <div
+      className="App flex items-center justify-center min-h-screen 
+      bg-gray-100 dark:bg-gray-900 transition-colors duration-500"
+    >
+      <SwitchButton isOn={isOn} toggleSwitch={toggleSwitch} />
+    </div>
   );
 }
 
